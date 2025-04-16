@@ -9,15 +9,11 @@ src:      contains pkg
     - include: no node, so useless
     - launch:
         - controller:       
-            - use_sim_time_arg,
-            - use_python_arg,
-            - wheel_radius_arg,
-            - wheel_separation_arg,
-            - wheel_controller_spawner,
-            - joint_state_broadcaster_spawner,
+            - wheel_controller_spawner,         spawn the controller for the wheel
+            - joint_state_broadcaster_spawner,  spawn the encoder reading
         - teleopkeyboard: 
-            - use_sim_time_arg, 
-            - teleop_keyboard, 
+            - use_sim_time_arg,                 use simulation time
+            - teleop_keyboard,                  use keyboard to give twist command
     - src: no node, so useless
     - CMakeLists.txt: folders added: launch config
     - package.xml: depedency: 
@@ -25,5 +21,4 @@ src:      contains pkg
         - robot_state_publisher
         - xacro
         - controller_manager
- 
   
