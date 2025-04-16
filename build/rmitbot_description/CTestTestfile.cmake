@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vudinhso/RMIT_Bot/lesson4_ws/src/rmitbot_description
-# Build directory: /home/vudinhso/RMIT_Bot/lesson4_ws/build/rmitbot_description
+# Source directory: /home/vudinhso/RMIT_Bot/lesson3_ws/src/rmitbot_description
+# Build directory: /home/vudinhso/RMIT_Bot/lesson3_ws/build/rmitbot_description
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
