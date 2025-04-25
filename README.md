@@ -2,11 +2,12 @@ Folders and files explanation
 .vscode, build, install, log:  autocreated, do nothing
 src:      contains pkg
 - rmit_description:     See lesson2. Otherwise, the added information are:
-    - urdf/rmitbot_ros2_control.xacro:  define control parameters of the wheel
-    - pacakge.xml:      add the depedency ros2_control
+    - rmitbot_ros2_control.xacro:   File added to describe the control of the robot
+    - rmitbot.urdf.xacro:           File updated to include rmitbot_ros2_control.xacro
+    - pacakge.xml:                  add the depedency for ros2_control
 - rmit_controller: 
     - config/rmitbot_controller.yaml: configuration of the ros2_controller pkg
-    - include: no node, so useless
+    - include: no node, so empty
     - launch:
         - controller:       
             - wheel_controller_spawner,         spawn the controller for the wheel
@@ -14,7 +15,7 @@ src:      contains pkg
         - teleopkeyboard: 
             - use_sim_time_arg,                 use simulation time
             - teleop_keyboard,                  use keyboard to give twist command
-    - src: no node, so useless
+    - src: no node, so empty
     - CMakeLists.txt: folders added: launch config
     - package.xml: depedency: 
         - ros2launch

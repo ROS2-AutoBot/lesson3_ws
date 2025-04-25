@@ -10,11 +10,11 @@ from launch.substitutions import LaunchConfiguration
 # CLI command (just in case)
 # ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/my_robot_controller/cmd_vel -p stamped:=True
 
-
 def generate_launch_description():
     
-    use_sim_time_arg = DeclareLaunchArgument(name="use_sim_time", default_value="True",
-                                      description="Use simulated time"
+    use_sim_time_arg = DeclareLaunchArgument(
+        name="use_sim_time", default_value="True",
+        description="Use simulated time"
     )
     
     teleop_keyboard = Node(

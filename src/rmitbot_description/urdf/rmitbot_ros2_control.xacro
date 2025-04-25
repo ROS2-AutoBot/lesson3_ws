@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rmitbot">
 
+
+
+<robot name="rmitbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <!-- ros2_control parameters -->
     <ros2_control name="RobotSystem" type="system">
 
         <!-- ros2_control Gazebo -->
@@ -29,4 +33,10 @@
 
     </ros2_control>
 
+    <!-- ROS 2 Control Gazebo plugins -->
+    <gazebo>
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find rmitbot_controller)/config/rmitbot_controller.yaml</parameters>
+        </plugin>
+    </gazebo>
 </robot>
