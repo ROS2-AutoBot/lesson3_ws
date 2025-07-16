@@ -13,16 +13,12 @@
   <!-- Modifcation of .xml start here -->
   <!-- ==================================== -->
   <!-- ros2launch:              launching launch file -->
-  <!-- robot_state_publisher:   publish the TF of the robot, for rviz -->
-  <!-- xacro:                   Calling xacro file for urdf -->
-  <!-- controller_manager:      loading pkg from ros2_control -->
-
-
+  <!-- controller_manager:      loading pkg from ros2_controller -->
   <exec_depend>ros2launch</exec_depend>
-  <!-- <exec_depend>robot_state_publisher</exec_depend> -->
-  <!-- <exec_depend>xacro</exec_depend> -->
   <exec_depend>controller_manager</exec_depend>
-  <!-- ================= -->
+  <!-- ==================================== -->
+  <!-- Modifcation of .xml ends here -->
+  <!-- ==================================== -->
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
